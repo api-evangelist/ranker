@@ -1,8 +1,26 @@
 aid: ranker
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ranker.png
 name: Ranker
-description: 'Ranker is a company surfaced as a portfolio company of bullpen-capital, dcvc and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Ranker is a consumer internet company that runs ranker.com, a crowdsourced
+  ranking and voting platform where users vote on and create rankings across pop culture,
+  entertainment, film, TV, music, food, sports, and other consumer topics. Its business
+  arm licenses "Ranker Insights" audience-intelligence and opinion-graph data - drawn
+  from more than 1.5 billion votes, 115 million voters, and 260,000 rankings - to brands,
+  agencies, publishers, and for AI/LLM training. Ranker does not publish a public,
+  self-serve developer API; a private api.ranker.com powers the site and its robots.txt
+  prohibits automated scraping and AI/LLM training use. Data access is sales-led via
+  business.ranker.com. Backed by Bullpen Capital and DCVC.'
 url: https://raw.githubusercontent.com/api-evangelist/ranker/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Entertainment
+- Media
+- Rankings
+- Audience Intelligence
+- Data Licensing
+- Market Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ranker-domain-security.yml
 - type: Website
   url: https://www.ranker.com
+- type: TermsOfService
+  url: https://www.ranker.com/terms
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
